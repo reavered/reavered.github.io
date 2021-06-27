@@ -5,6 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Jason Zhao</title>
+
     <style type="text/css">
        dt { font-weight:bold; }
        dd { margin:10px; }
@@ -14,28 +15,32 @@
 		   border:1px solid grey;
 		}	
     </style>
+
+	<!-- For LaTeX:-->
+	<script type="text/x-mathjax-config">
+ 		 MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript"
+ 		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
 </head>
 
 <body>
 
-  <div style="max-width:1000px;margin:25px auto 25px auto;">
-  <div style="margin:50px;">
-  <div style="text-align:center;">
-  </div>
+	<div style="max-width:1000px;margin:25px auto 25px auto;">
+	<div style="margin:50px;">
+	<div style="text-align:center;">
+	</div>
 
-  <div style="text-align:center;">
-  <h1>Jason Zhao</h1>
-  </div>
-  
+	<div style="text-align:center;">
+	<h1>Jason Zhao</h1>
+	</div>
  
-   
-  <img src="tsukasa.gif" alt="portrait" width="19%" style="float:right; margin-left: 2em; margin-top: 1em">
+	<img src="tsukasa.gif" alt="portrait" width="19%" style="float:right; margin-left: 2em; margin-top: 1em">
   
-  <h2>About</h2>
+<h2>About</h2>
   
-  
-  
-  <p>I am a first year Ph.D. student in the math department. I completed my B.S. and M.A. in mathematics at <a href="http://math.ucla.edu">UCLA</a> in 2021. My research interests are in harmonic analysis and partial differential equations. Here is my <a href = "CV.pdf">CV</a>.</p>
+	<p>I am a first year Ph.D. student in the math department. I completed my B.S. and M.A. in mathematics at <a href="http://math.ucla.edu">UCLA</a> in 2021. My research interests are in harmonic analysis and partial differential equations. Here is my <a href = "CV.pdf">CV</a>.</p>
   
 	<p>My coordinates are:</p>
 	
@@ -48,26 +53,88 @@
 		<li><b>Email:</b> zhao [dot] j [at] berkeley [dot] edu</li>
 	</ul>
 	</table>
+
 <h2>Teaching</h2>
   
 	<table>
 	<ul style="list-style-type:square">
 		<li>Office Hours: Never </li>
-		<li>Discussion Hours: Never</li>
+		<li>Discussion Hours: MWF 13:00 - 14:00 $\pm \varepsilon$ hours</li>
 	</ul>
 	</table>
 
-<h2>Preprints and Publications</h2>
-  
-	<ul style="list-style-type:square">
-		<li>Elzbieta Boldyriew, Fangu Chen, Charles Devlin VI, Steven J. Miller, Jason Zhao, <i>Determining optimal test
-functions for 2-level densities.</i> Preprint, 2020. <a href="https://arxiv.org/abs/2011.10140">(arXiv link)</a></li>
+<!-- For showing/hiding abstracts:-->
+<script>
+function showAbs(id) 
+{
+	var x = document.getElementById('paper' + id);
+	if (x.style.display === "none") 
+	{
+		x.style.display = "block";	
+	} 
+	else 
+	{
+		x.style.display = "none";
+	}
+}
 
-		<li>Elzbieta Boldyriew, Elena Kim, Steven J. Miller, Eyvindur Palsson, Sean Sovine, Fernando Trejos Suárez, Jason Zhao, <i> Tinkering with lattices: a new take on the Erdos distance problem.</i> <a href="https://arxiv.org/abs/2009.12450">(arXiv link)</a></li>
-	</ul>
+function showExpAbs(id)
+{
+	var x = document.getElementById('exp' + id);
+ 	if (x.style.display === "none") 
+	{
+   		x.style.display = "block";
+  	} 
+	else 
+	{
+    		x.style.display = "none";
+ 	}
+}
+</script>
 
-  
- 
-  </body>
+
+<h2>Preprints and Publications <span style="font-weight:normal"><font size = "+0">(click to show/hide abstract)</font></span></h2>
+
+
+<ul style="list-style-type:square">
+	<li><a onclick=showAbs(2)>Elzbieta Boldyriew, Fangu Chen, Charles Devlin VI, Steven J. Miller, Jason Zhao, <i>Determining optimal test
+functions for $2$-level densities.</i></a> <a href=
+"https://arxiv.org/abs/2011.10140"> arXiv:2011.10140[math.AP]</a>.
+  <div id="paper2" style="display:none">
+	<p><b>Abstract:</b> Katz and Sarnak conjectured a
+correspondence between the $n$-level density statistics of zeros from
+families of $L$-functions
+with eigenvalues from random matrix ensembles, and in many cases the sums of smooth test functions, whose Fourier transforms are
+finitely supported over scaled zeros in a family, converge to an integral of
+the test function against a density $W_{n, G}$ depending on the
+symmetry $G$ of the family (unitary, symplectic or orthogonal). This integral bounds the average order of vanishing at the central point of the corresponding family of $L$-functions. 
+
+	We can obtain better estimates on this vanishing in two ways. The first is
+to do more number theory, and prove results for larger $n$ and greater
+support; the second is to do functional analysis and obtain better test
+functions to minimize the resulting integrals. We pursue the latter here
+when $n=2$, minimizing  
+		\[ \frac{1}{\Phi(0, 0)} \int_{{\mathbb R}^2} W_{2,G} (x, y) \Phi(x, y) dx dy \] 
+over test functions $\Phi : {\mathbb R}^2
+\to [0, \infty)$ with compactly supported Fourier transform. We study a
+restricted version of this optimization problem, imposing that our test
+functions take the form $\phi(x) \psi(y)$ for some fixed admissible $\psi(y)$ and
+$\operatorname{supp}{\widehat \phi} \subseteq [-1, 1]$. Extending results from the 1-level case, namely the functional analytic arguments of Iwaniec, Luo and Sarnak and the differential equations method introduced by Freeman and Miller, we explicitly solve for the optimal $\phi$ for appropriately chosen fixed test function $\psi$. We conclude by discussing further improvements on estimates by the method of iteration.  </p>
+	</div>
+	</li>
+
+	<li><a onclick=showAbs(1)>Elzbieta Boldyriew, Elena Kim, Steven J. Miller, Eyvindur Palsson, Sean Sovine, Fernando Trejos Suárez, Jason Zhao, <i>Tinkering with lattices: a new take on the Erdos distance problem.</i> </a><a href=
+"https://arxiv.org/abs/2009.12450"> arXiv:2009.12450[math.AP]</a>.
+	<div id="paper1" style="display:none">
+	<p><b>Abstract:</b> The Erdős distance problem concerns the least number of distinct distances that can be determined by $N$ points in the plane. The integer lattice with $N$ points is known as <i>near-optimal</i>, as it spans $\Theta(N/\sqrt{\log(N)})$ distinct distances, the lower bound for a set of $N$ points (Erdős, 1946). The only previous non-asymptotic work related to the Erdős distance problem that has been done was for $N\leq 13$. We take a new non-asymptotic approach to this problem in a model case, studying the distance distribution, or in other words, the plot of frequencies of each distance of the $N \times N$ integer lattice. In order to fully characterize this distribution, we adapt previous number-theoretic results from Fermat and Erdős in order to relate the frequency of a given distance on the lattice to the sum-of-squares formula.
+	</p>
+	<p>
+We study the distance distributions of all the lattice's possible subsets; although this is a restricted case, the structure of the integer lattice allows for the existence of subsets which can be chosen so that their distance distributions have certain properties, such as emulating the distribution of randomly distributed sets of points for certain small subsets, or emulating that of the larger lattice itself. We define an error which compares the distance distribution of a subset with that of the full lattice. The structure of the integer lattice allows us to take subsets with certain geometric properties in order to maximize error; we show these geometric constructions explicitly. Further, we calculate explicit upper bounds for the error when the number of points in the subset is $4, 5, 9$ or $\lceil N^2/2 \rceil$ and prove a lower bound in cases with a small number of points. </p>
+	</div>
+	</li>
+</ul>
+
+
+</body>
 </html>
 
