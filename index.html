@@ -3,24 +3,43 @@
 
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Jason Zhao</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Jason Zhao</title>
 
-    <style type="text/css">
-       dt { font-weight:bold; }
-       dd { margin:10px; }
-       th { text-align:right; }
-       body { font-family:  "Book Antiqua", "Palatino Linotype", serif; }
-	   img { 
+<!-- Flush left and flush right text for abstracts-->
+<style type="text/css">
+	.abstractDiv 
+		{
+		text-align: justify;
+  		text-justify: inter-word;
+		}
+	dt 
+		{
+		font-weight:bold; 
+		}
+	dd 
+		{
+		margin:10px; 
+		}
+	th 
+		{
+		text-align:right;
+		}
+	body 
+		{
+		font-family:  "Book Antiqua", "Palatino Linotype", serif; 
+		}
+	img 
+		{ 
 		   border:1px solid grey;
 		}	
-    </style>
+   </style>
 
-	<!-- For LaTeX:-->
-	  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async
+<!-- For LaTeX:-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
+</script>
 </head>
 
 <body>
@@ -53,13 +72,9 @@
 	</table>
 
 <h2>Teaching</h2>
-  
-	<table>
-	<ul style="list-style-type:square">
-		<li>Office Hours: Never </li>
-		<li>Discussion Hours: MWF 13:00 - 14:00 \(\pm \varepsilon\) hours</li>
-	</ul>
-	</table>
+	<p>
+	In Fall 2021, I am a GSI for Math 53, Multivariable Calculus. My office hours are Mondays, 3:00 - 5:00 PM Berkeley Time.
+	</p>
 
 <!-- For showing/hiding abstracts:-->
 <script>
@@ -79,14 +94,14 @@ function showAbs(id)
 </script>
 
 
-<h2>Preprints and Publications <span style="font-weight:normal"><font size = "+0">(click to show/hide abstract)</font></span></h2>
+<h2>Preprints and Publications <span style="font-weight:normal"><font size = "+0">(click title to show/hide abstract)</font></span></h2>
 
 
 <ul style="list-style-type:square">
-	<li><a onclick=showAbs(2)>Elzbieta Boldyriew, Fangu Chen, Charles Devlin VI, Steven J. Miller, Jason Zhao, <i>Determining optimal test
-functions for \(2\)-level densities.</i></a> <a href=
+	<li><a onclick=showAbs(2)><i>Determining optimal test
+functions for \(2\)-level densities</i></a>, with Elzbieta Boldyriew, Fangu Chen, <a href="https://mathematics.uchicago.edu/people/profile/charles-devlin-vi/">Charles Devlin VI</a>, <a href="https://web.williams.edu/Mathematics/sjmiller/public_html/">Steven J. Miller</a>.  <a href=
 "https://arxiv.org/abs/2011.10140"> arXiv:2011.10140[math.NT]</a>.
-  <div id="paper2" style="display:none">
+  <div id="paper2" style="display:none" class="abstractDiv">
 	<p><b>Abstract:</b> Katz and Sarnak conjectured a
 correspondence between the \(n\)-level density statistics of zeros from
 families of \(L\)-functions
@@ -94,7 +109,8 @@ with eigenvalues from random matrix ensembles, and in many cases the sums of smo
 finitely supported over scaled zeros in a family, converge to an integral of
 the test function against a density \(W_{n, G}\) depending on the
 symmetry \(G\) of the family (unitary, symplectic or orthogonal). This integral bounds the average order of vanishing at the central point of the corresponding family of \(L\)-functions. 
-
+	</p>
+	<p>
 	We can obtain better estimates on this vanishing in two ways. The first is
 to do more number theory, and prove results for larger \(n\) and greater
 support; the second is to do functional analysis and obtain better test
@@ -109,15 +125,24 @@ functions take the form \(\phi(x) \psi(y)\) for some fixed admissible \(\psi(y)\
 	</div>
 	</li>
 
-	<li><a onclick=showAbs(1)>Elzbieta Boldyriew, Elena Kim, Steven J. Miller, Eyvindur Palsson, Sean Sovine, Fernando Trejos Suárez, Jason Zhao, <i>Tinkering with lattices: a new take on the Erdos distance problem.</i> </a><a href=
-"https://arxiv.org/abs/2009.12450"> arXiv:2009.12450[math.NT]</a>.
-	<div id="paper1" style="display:none">
+	<li><a onclick=showAbs(1)><i>Tinkering with lattices: a new take on the Erdos distance problem</i></a>, with Elzbieta Boldyriew, Elena Kim, <a href="https://web.williams.edu/Mathematics/sjmiller/public_html/">Steven J. Miller</a>, <a href="https://intranet.math.vt.edu/people/palsson/">Eyvindur Palsson</a>, <a href="https://intranet.math.vt.edu/people/sovine5/">Sean Sovine</a>, Fernando Trejos Suárez. <a href=
+"https://arxiv.org/abs/2009.12450"> arXiv:2009.12450[math.NT]</a>
+	<div id="paper1" style="display:none" class="abstractDiv">
 	<p><b>Abstract:</b> The Erdős distance problem concerns the least number of distinct distances that can be determined by \(N\) points in the plane. The integer lattice with \(N\) points is known as <i>near-optimal</i>, as it spans \(\Theta(N/\sqrt{\log(N)})\) distinct distances, the lower bound for a set of \(N\) points (Erdős, 1946). The only previous non-asymptotic work related to the Erdős distance problem that has been done was for \(N\leq 13\). We take a new non-asymptotic approach to this problem in a model case, studying the distance distribution, or in other words, the plot of frequencies of each distance of the \(N \times N\) integer lattice. In order to fully characterize this distribution, we adapt previous number-theoretic results from Fermat and Erdős in order to relate the frequency of a given distance on the lattice to the sum-of-squares formula.
 	</p>
 	<p>
 We study the distance distributions of all the lattice's possible subsets; although this is a restricted case, the structure of the integer lattice allows for the existence of subsets which can be chosen so that their distance distributions have certain properties, such as emulating the distribution of randomly distributed sets of points for certain small subsets, or emulating that of the larger lattice itself. We define an error which compares the distance distribution of a subset with that of the full lattice. The structure of the integer lattice allows us to take subsets with certain geometric properties in order to maximize error; we show these geometric constructions explicitly. Further, we calculate explicit upper bounds for the error when the number of points in the subset is \(4, 5, 9\) or \(\lceil N^2/2 \rceil\) and prove a lower bound in cases with a small number of points. </p>
 	</div>
 	</li>
+</ul>
+
+
+<h2>Reading List</h2>
+
+Some non-math books which I am currently reading:
+<ul>
+	<li><a href="https://en.wikipedia.org/wiki/The_High_Cost_of_Free_Parking#:~:text=The%20High%20Cost%20of%20Free%20Parking%20is%20a%20non%2Dfiction,and%20off%2Dstreet%20parking%20requirements.">The High Cost of Free Parking</a> by Donald Shoup </li>
+	<li><a href="https://www.hup.harvard.edu/catalog.php?isbn=9780674987692">The Ethics of Authenticity</a> by Charles Taylor </li>
 </ul>
 
 
